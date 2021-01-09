@@ -4,7 +4,8 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<!-- Author Meta -->
 		<meta name="author" content="pacgrafica">
 		<!-- Meta Description -->
@@ -28,10 +29,36 @@
 			<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 			<link rel="stylesheet" href="css/bootstrap.css">
 			<link rel="stylesheet" href="css/main.css">
+			<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+			<link rel="stylesheet" href="css/estilos.css">
+			<link rel="stylesheet" href="css/floating-wpp.css">
+    		<link rel="stylesheet" type="text/css" href="css/floating-wpp.min.css">
 		</head>
 		<body>
+			<div style="z-index: 500000;" id="myButton"></div>
+			<div class="container-fluid">
+				<div class="row">
+					<nav class="col-md-12 fixed-top navbar navbar-expand-lg navbar-light bg-light">
+						<a class="navbar-brand" href="#"><img src="img/pimad.svg" style="height:105px;" alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						<div class="navbar-nav">
+							<a class="nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="#productos">Productos</a>
+							<a class="nav-link" href="#">Promociones</a>
+							<a class="nav-link" href="#service">Servicios</a>
+							<a class="nav-link" href="#">Blog</a>
+							<a class="nav-link" href="#">Portafolios</a>
+							<a class="nav-link" href="#">Contactenos</a>
+						</div>
+						</div>
+					</nav>
+				</div>
+			</div>
 
-			<!-- Start Header Area -->
+			<!-- Start Header Area 
 			<header class="default-header">
 				<div class="container">
 					<div class="header-wrap">
@@ -49,25 +76,26 @@
 									<a href="#book">Portafolios</a>
 									<a href="#book">Contactenos</a>
 								</nav>
-								<!-- <div class="menu-bar"><span class="lnr lnr-menu"></span></div> -->
+								 <div class="menu-bar"><span class="lnr lnr-menu"></span></div> 
 							</div>
 						</div>
 					</div>
 				</div>
 			</header>
-            <!-- End Header Area -->
+             End Header Area -->
             
             <!-- start Parallax video -->
             <section class="relative" id="home">
                 <div class="row fullscreen align-items-center justify-content-center">
-                    <div class="col-lg-12 shadow mb-5" style="padding: 150px;"><h1 style="color: white;">Somos una agencia de publicidad impresa y marketing digital</h1></div>
-                    <div class="col-lg-12 hero-wrapper">
+					<div class="col-sm-12 col-lg-12 shadow mb-5 margen" style="padding: 150px;"><h1 style="color: white;">Queremos presentar las mas grandes experiencias para nuestros clientes mas recurrentes, disfruta de un servicio optimo con el mejor equipo creativo.</h1>
+						<a href="#losmasvendidos" class="head-btn btn text-uppercase" style="color: rgb(0, 0, 0); font-weight: bold;">Saber más</a></div>
+                    <div class="col-sm-12 col-lg-12 hero-wrapper">
                         <div class="hero"><figure><video loop muted autoplay> <source src="http://pacgrafica.com/pimad/video/agencia2.mp4"></source></video></figure></div>
-                    </div>
-                    <figcaption class="col-lg-12 shadow mb-5" style="padding: 150px;"><h2 style="color: white;">Especialistas en el sector de las Artes Gráficas</h2>
+                    <!-- </div>
+                    <figcaption class="col-sm-12 col-lg-12 shadow mb-5" style="padding: 150px;"><h2 style="color: white;">Especialistas en el sector de las Artes Gráficas</h2>
                         <p style="color: white;">Queremos presentar las mas grandes experiencias para nuestros clientes mas recurrentes, disfruta de un servicio optimo con el mejor equipo creativo.</p>
-                        <a href="#" class="head-btn btn text-uppercase">Saber más</a>
-                    </figcaption>
+                        <a href="#losmasvendidos" class="head-btn btn text-uppercase">Saber más</a>
+                    </figcaption> -->
                 </div>
             </section>
 
@@ -100,9 +128,293 @@
 				</div>
             </section>
             
-            End banner Area -->
+			End banner Area -->
+			<!--Seccion de Productos-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-lg-12 contenedor bg-light" id="productos">
+						<header>
+							<div class="logo">
+								<h1>Productos</h1>
+							</div>
+							<form action="">
+								<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+							</form>
+							<div class="categorias" id="categorias">
+								<a href="#">Empaques</a>
+								<a href="#">Bolsas</a>
+								<a href="#">Papeleria</a>
+								<a href="#">Comercial</a>
+								<a href="#">Decorativos</a>
+								<a href="#" class="activo">Todos</a>
+							</div>
+						</header>
+				
+						<section class="grid" id="grid">
+							<div class="item" 
+								data-categoria="empaques"
+								data-etiquetas="empaques bolsas cajas caja"
+								data-descripcion="<h4>Empaque personalizado de Sixpack o Cuatripack para cerveza x</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>							
+								<div class="item-contenido">
+									<img src="img/empaques1.png" alt="Caja Sixpack">
+								</div>
+							</div>
 
-            <!--Menu de navegacion colapsable-->
+							<div class="item" 
+								data-categoria="empaques"
+								data-etiquetas="empaques bolsas cajas caja"
+								data-descripcion="<h4>Empaque personalizado de Sixpack en carton microcorrugado</h4> <h3>desde 12 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/empaques2.png" alt="Caja Sixpack">
+								</div>
+							</div>
+
+							<div class="item" 
+								data-categoria="empaques"
+								data-etiquetas="empaques bolsas cajas caja"
+								data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/empaques3.png" alt="Caja tapabocas">
+								</div>
+							</div>
+
+							<div class="item" 
+								data-categoria="empaques"
+								data-etiquetas="empaques bolsas cajas caja"
+								data-descripcion="<h4>Caja de carton microcorrugado especial para almacenamiento y embalaje</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/empaques4.png" alt="cajas de carton">
+								</div>
+							</div>
+
+							<div class="item" 
+								data-categoria="empaques"
+								data-etiquetas="empaques bolsas cajas caja"
+								data-descripcion="<h4>Caja de carton microcorrugado con nido especial para almacenamiento y embalaje</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/empaques5.png" alt="cajas con nido">
+								</div>
+							</div>
+
+							<div class="item" 
+								data-categoria="empaques"
+								data-etiquetas="empaques bolsas cajas caja"
+								data-descripcion="<h4>Caja de carton microcorrugado especial para almacenamiento y embalaje</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/empaques6.png" alt="cajas">
+								</div>
+							</div>
+
+							<div class="item" 
+								data-categoria="empaques"
+								data-etiquetas="empaques bolsas cajas caja"
+								data-descripcion="<h4>Caja de Lujo rigida con nido</h4> <h3>desde 100 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/empaques7.png" alt="caja de lujo">
+								</div>
+							</div>
+				
+							<div class="item"
+								 data-categoria="bolsas"
+								 data-etiquetas="bolsas bolsa ecologica empaques bolsa personalizada"
+								 data-descripcion="<h4>Bolsa en papel ecologico marcadas a una tinta</h4> <h3>desde 50 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/bolsas1.png" alt="bolsa papel ecologico">
+								</div>
+							</div>
+
+							<div class="item"
+								 data-categoria="bolsas"
+								 data-etiquetas="bolsas bolsa ecologica empaques bolsa personalizada"
+								 data-descripcion="<h4>Caja bolsa impresas y plastificadas por las 2 caras</h4> <h3>desde 50 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/bolsas2.png" alt="caja bolsa">
+								</div>
+							</div>
+				
+							<div class="item"
+								 data-categoria="papeleria"
+								 data-etiquetas="membretes sobres carpetas facturas tarjetas de presentacion brochure folletos almanaques calendarios carnets"
+								 data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/papeleria1.png" alt="">
+								</div>
+							</div>							
+				
+							<div class="item"
+								 data-categoria="papeleria"
+								 data-etiquetas="membretes sobres carpetas facturas tarjetas de presentacion brochure folletos almanaques calendarios carnets"
+								 data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/papeleria2.png" alt="">
+								</div>
+							</div>
+
+							<div class="item"
+								 data-categoria="papeleria"
+								 data-etiquetas="membretes sobres carpetas facturas tarjetas de presentacion brochure folletos almanaques calendarios carnets"
+								 data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/papeleria3.png" alt="">
+								</div>
+							</div>
+
+							<div class="item"
+								 data-categoria="papeleria"
+								 data-etiquetas="membretes sobres carpetas facturas tarjetas de presentacion brochure folletos almanaques calendarios carnets"
+								 data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/papeleria4.png" alt="">
+								</div>
+							</div>
+
+							<div class="item"
+								 data-categoria="papeleria"
+								 data-etiquetas="membretes sobres carpetas facturas tarjetas de presentacion brochure folletos almanaques calendarios carnets"
+								 data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/papeleria5.png" alt="">
+								</div>
+							</div>
+
+							<div class="item"
+								 data-categoria="papeleria"
+								 data-etiquetas="membretes sobres carpetas facturas tarjetas de presentacion brochure folletos almanaques calendarios carnets"
+								 data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/papeleria6.png" alt="">
+								</div>
+							</div>
+
+							<div class="item"
+								 data-categoria="papeleria"
+								 data-etiquetas="membretes sobres carpetas facturas tarjetas de presentacion brochure folletos almanaques calendarios carnets"
+								 data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/papeleria7.png" alt="">
+								</div>
+							</div>
+
+							<div class="item"
+								 data-categoria="papeleria"
+								 data-etiquetas="membretes sobres carpetas facturas tarjetas de presentacion brochure folletos almanaques calendarios carnets"
+								 data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/papeleria8.png" alt="">
+								</div>
+							</div>
+
+							<div class="item"
+								 data-categoria="papeleria"
+								 data-etiquetas="membretes sobres carpetas facturas tarjetas de presentacion brochure folletos almanaques calendarios carnets"
+								 data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/papeleria9.png" alt="">
+								</div>
+							</div>
+
+							<div class="item"
+								 data-categoria="papeleria"
+								 data-etiquetas="membretes sobres carpetas facturas tarjetas de presentacion brochure folletos almanaques calendarios carnets"
+								 data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/papeleria10.png" alt="">
+								</div>
+							</div>
+
+							<div class="item"
+								 data-categoria="papeleria"
+								 data-etiquetas="membretes sobres carpetas facturas tarjetas de presentacion brochure folletos almanaques calendarios carnets"
+								 data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/papeleria11.png" alt="">
+								</div>
+							</div>
+				
+							<div class="item"
+								 data-categoria="publicidad"
+								 data-etiquetas="publicidad comercial"
+								 data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/publicidad1.png" alt="">
+								</div>
+							</div>
+				
+							<div class="item"
+								 data-categoria="publicidad"
+								 data-etiquetas="publicidad exterior"
+								 data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/publicidad2.png" alt="">
+								</div>
+							</div>
+				
+							<div class="item"
+								 data-categoria="decorativos"
+								 data-etiquetas="decorativos hogar"
+								 data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/decorativos1.png" alt="">
+								</div>
+							</div>
+				
+							<div class="item" 
+								 data-categoria="papeleria"
+								 data-etiquetas="tarjetas talonarios brochure"
+								 data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/papeleria3.png" alt="">
+								</div>
+							</div>
+				
+							<div class="item"
+								data-categoria="publicidad"
+								data-etiquetas="rompetrafico avisos vallas acrilico"
+								data-descripcion="<h4>Caja para tapabocas medicalizado Y N95</h4> <h3>desde 500 Unidades</h3> <button>whatsapp</button>"
+							>
+								<div class="item-contenido">
+									<img src="img/publicidad3.png" alt="">
+								</div>
+							</div>
+						</section>
+				
+						<section class="overlay" id="overlay">
+							<div class="contenedor-img">
+								<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+								<img src="" alt="">
+							</div>
+							<p class="descripcion"></p>
+						</section>
+					</div>
+				</div>
+			</div>
+			<!--Finaliza seccion productos-->
+			
+            <!--Menu de navegacion colapsable
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -205,7 +517,7 @@
             </div>
             
 
-			<!-- Inicia Menu de navegacion productos
+			Inicia Menu de navegacion productos
 			<div class="row">
 			<nav class="col-lg-12 navbar navbar-expand-lg navbar-light bg-light">
 			  <a class="navbar-brand" href="#">Productos</a>
@@ -331,10 +643,10 @@
 			<section class="about-area">
 				<div class="container-fluid">
 					<div class="row d-flex justify-content-end align-items-center">
-						<div class="col-lg-6 col-md-12 about-left no-padding">
+						<div class="col-sm-12 col-lg-6 col-md-12 about-left no-padding">
 							<img class="img-fluid" src="img/about-img.jpg" alt="">
 						</div>
-						<div class="col-lg-6 col-md-12 about-right">
+						<div class="col-sm-12 col-lg-6 col-md-12 about-right">
 							<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAgenciaPimad&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="500" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 							<!-- <h1>Acerca de nosotros <br></h1>
 							<p>
@@ -401,46 +713,48 @@
 								Su pagina web liviana y compatible, conectada al trafico y funcionamiento de las redes sociales.
 							</p>
 						</div>
-
+						
 
 					</div>
 				</div>
+				<div id="losmasvendidos"></div>
 			</section>
 			<!-- End facilities Area -->
 
 			<!-- Start gallery Area -->
-		<	<section class="gallery-area">
+			
+			<section class="gallery-area">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-lg-2 col-sm-6 single-gallery no-padding"">
 						  <div class="content">
 						    <a href="#" target="_blank">
 						      <div class="content-overlay"></div>
-						  		 <img class="content-image img-fluid d-block mx-auto" src="img/g1.jpg" alt="">
+						  		 <img class="content-image img-fluid d-block mx-auto" src="img/g4.jpg" alt="">
 						      <div class="content-details fadeIn-bottom">
-						        <h3 class="content-title">Tarjetas Corporativas</h3>
+						        <h3 class="content-title">Desarrollo de Empaques para Producto</h3>
 						      </div>
 						    </a>
 						  </div>
 						</div>
-						<div class="col-lg-2 col-sm-6 single-gallery no-padding"">
+						<div class="col-lg-2 col-sm-6 single-gallery no-padding">
 						  <div class="content">
 						    <a href="#" target="_blank">
 						      <div class="content-overlay"></div>
 						  		 <img class="content-image img-fluid d-block mx-auto" src="img/g2.jpg" alt="">
 						      <div class="content-details fadeIn-bottom">
-						        <h3 class="content-title">Recibos</h3>
+						        <h3 class="content-title">Desarrollo de Marca</h3>
 						      </div>
 						    </a>
 						  </div>
 						</div>
-						<div class="col-lg-2 col-sm-6 single-gallery no-padding"">
+						<div class="col-lg-2 col-sm-6 single-gallery no-padding">
 						  <div class="content">
 						    <a href="#" target="_blank">
 						      <div class="content-overlay"></div>
 						  		 <img class="content-image img-fluid d-block mx-auto" src="img/g3.jpg" alt="">
 						      <div class="content-details fadeIn-bottom">
-						        <h3 class="content-title">Papeleria Corporativa</h3>
+						        <h3 class="content-title">Decoración Locativa Personalizada</h3>
 						      </div>
 						    </a>
 						  </div>
@@ -450,20 +764,20 @@
 						  <div class="content">
 						    <a href="#" target="_blank">
 						      <div class="content-overlay"></div>
-						  		 <img class="content-image img-fluid d-block mx-auto" src="img/g4.jpg" alt="">
+						  		 <img class="content-image img-fluid d-block mx-auto" src="img/g1.jpg" alt="">
 						      <div class="content-details fadeIn-bottom">
-						        <h3 class="content-title">Carpetas</h3>
+						        <h3 class="content-title">Diseño e Impresión Editorial</h3>
 						      </div>
 						    </a>
 						  </div>
 						</div>
-						<div class="col-lg-2 col-sm-6 single-gallery no-padding"">
+						<div class="col-lg-2 col-sm-6 single-gallery no-padding">
 						  <div class="content">
 						    <a href="#" target="_blank">
 						      <div class="content-overlay"></div>
 						  		 <img class="content-image img-fluid d-block mx-auto" src="img/g5.jpg" alt="">
 						      <div class="content-details fadeIn-bottom">
-						        <h3 class="content-title">Brochures</h3>
+						        <h3 class="content-title">Publicidad</h3>
 						      </div>
 						    </a>
 						  </div>
@@ -474,7 +788,7 @@
 						      <div class="content-overlay"></div>
 						  		 <img class="content-image img-fluid d-block mx-auto" src="img/g6.jpg" alt="">
 						      <div class="content-details fadeIn-bottom">
-						        <h3 class="content-title">Plegables</h3>
+						        <h3 class="content-title">Diseño Web y Marketing Digital</h3>
 						      </div>
 						    </a>
 						  </div>
@@ -498,54 +812,40 @@
 									</p>
 								</div>
 							</div>
-					  		<form class="booking-form" id="booking" action="booking.php">
-								 <div class="row">
-								    <div class="col-lg-6 col-md-12">
-								    	<div class="row">
-									    	<div class="col-lg-6">
-												<input type="text" name="fname" class="single-in form-control" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required="">
-												<input id="datepicker" name="arrival" class="single-in form-control"  onblur="this.placeholder = 'Arrival'" type="text" placeholder="Arrival" required>
-												<select name="room-type" class="app-select form-control" required>
-													<option data-display="Room Type">tipo de servicio</option>
-													<option value="1">Servicio 1</option>
-													<option value="2">Servicio 2</option>
-													<option value="3">Servicio 3</option>
-												</select>
-												<select name="adults" class="app-select form-control" required>
-													<option data-display="Adults">Empresa</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-												</select>
-									    	</div>
-									    	<div class="col-lg-6">
-									    		<input type="text" name="lname" class="single-in form-control" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required="">
-									    		<input id="datepicker2" name="departure" class="single-in form-control"  onblur="this.placeholder = 'Departure'" type="text" placeholder="Departure" required>
-									    		<select name="no-room" class="app-select form-control" required>
-													<option data-display="Number Of Rooms">Referencia del producto</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-												</select>
-												<select name="clild" class="app-select form-control">
-													<option data-display="Childs">Trabajo al instante</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-												</select>
-									    	</div>
-								    	</div>
-								    </div>
-								    <div class="col-lg-6 col-md-12">
-								      	<textarea class="single-in form-control" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-								    </div>
-										<div class="col-lg-12 d-flex justify-content-center send-btn">
-										<button class="primary-btn mt-20 text-uppercase ">enviar<span class="lnr lnr-arrow-right"></span></button>
+							
+						<div class="row">
+							<div class="col-md-6">
+							  	<form action="envia.php" method="post" class="form-consulta">
+									<div class="row animated jackInTheBox" id="tiempo1" style="padding:40px">
+										<div class="col-md-6 animated bounceInLeft" id="tiempo2">
+												<label>Nombre y Apellido: <span>*</span>
+										</div>
+										<div class="col-md-6 animated bounceInRight" id="tiempo3">
+												<input type="text" name="nombre" placeholder="Nombre y apellido" class="campo-form" required>
+												</label>
+										</div>
+										<div class="col-md-6 animated bounceInLeft" id="tiempo4">
+												<label>Cel: <span>*</span>
+										</div>
+										<div class="col-md-6 animated bounceInRight" id="tiempo5">
+												<input type="text" name="cel" placeholder="Cel" class="campo-form" required>
+												</label>
+										</div>
+										<div class="col-md-6 animated bounceInLeft" id="tiempo6">    
+												<label>Consulta:
+										</div>
+										<div class="col-md-6 animated bounceInRight" id="tiempo7"> 
+												<textarea name="consulta" class="campo-form"></textarea>
+												</label>
+										</div>
+										<div class="col-md-12 animated jackInTheBox" id="tiempo8">
+												<input type="submit" value="Enviar" class="btn btn-warning">
+										</div>
 									</div>
-
-									<div class="alert-msg"></div>
-								  </div>
-					  		</form>
+								</form>
+						</div>
+						<div class="col-md-6">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.913062505512!2d-74.0952681855142!3d4.609581996651303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9962016a9aa9%3A0xb45fe8edcf9d562a!2sAgencia%20Pimad!5e0!3m2!1ses!2sco!4v1605668319700!5m2!1ses!2sco" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 						</div>
 					</div>
 				</div>
@@ -564,7 +864,7 @@
 							 </p>
 						</div>
 						<div class="single-info col-lg-3 col-md-6">
-							 <h4>Telefono</h4>
+							 <h4>Teléfono</h4>
 							 <p>
 								Teléfono 01: 927 9906 <br>
 								Teléfono 02: 301 524 1630<br>
@@ -572,12 +872,34 @@
 						</div>
 						
 						<div class="single-info col-lg-3 col-md-6">
-							 <h4>Correo electronico</h4>
+							 <h4>Correo electrónico</h4>
 							 <p>
 							 	gerencia@agenciapimad.com <br>
 								info@agenciapimad.com <br>
 								ventas@agenciapimad.com
 							 </p>
+						</div>
+						<div class="single-info col-lg-3 col-md-6">
+							<h4>Contactenos</h4>
+							<p>En nuestras redes sociales
+							</p>
+							<div class="row redes-sociales">
+								<div class="contenedor-icono col-md-4">
+									<a href="https://www.facebook.com/AgenciaPimad" target="_blank" class="twitter">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</div>
+								<div class="contenedor-icono col-md-4">
+									<a href="https://www.facebook.com/AgenciaPimad" target="_blank" class="facebook">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</div>
+								<div class="contenedor-icono col-md-4">
+									<a href="https://www.facebook.com/AgenciaPimad" target="_blank" class="instagram">
+										<i class="fab fa-instagram"></i>
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -590,10 +912,15 @@
 					<div class="row">
 						<div class="col-lg-3  col-md-6 col-sm-12">
 							<div class="single-footer-widget">
-								<h6>Agencia Pimad</h6>
+								<h6>Facilidades de pago</h6>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
-								</p>
+									Realice sus pagos comodamente a traves de nuestros canales digitales.
+                                </p>
+                                <div class="">
+									<a href="#"><img src="img/nequi.svg" alt="nequi" width="80px"></a>&nbsp;
+									<a href="#"><img src="img/bancolombia.svg" alt="bancolombia" width="80px"></a>
+									<a href="#"><img src="img/daviplata.svg" alt="daviplata" width="80px"></a>&nbsp;
+								</div>
 							</div>
 						</div>
 						<div class="col-lg-4  col-md-6 col-sm-12">
@@ -661,7 +988,9 @@
 				</div>
 			</footer>
 			<!-- End footer Area -->
-
+			<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+			<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+			<script src="js/maintwo.js"></script>
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>
@@ -674,4 +1003,23 @@
 			<script src="js/jquery.magnific-popup.min.js"></script>
 			<script src="js/main.js"></script>
 		</body>
+			<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    		<script type="text/javascript" src="js/floating-wpp.js"></script>
+    		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    		<script type="text/javascript">
+    		$(function () {
+        		$('#myButton').floatingWhatsApp({
+            	phone: '573015241630',
+            	popupMessage: 'Hola, soy Jhonnathan en que le puedo ayudar?',
+            	message: "Estoy interesad@ en",
+            	showPopup: true,
+            	showOnIE: false,
+            	headerTitle: 'Agencia Pimad',
+            	headerColor: '#25D366',
+            	backgroundColor: '#25D366',
+            	buttonImage: '<img src="img/whatsapp.svg"/>'
+        	});
+    	});
+    </script>
 	</html>
