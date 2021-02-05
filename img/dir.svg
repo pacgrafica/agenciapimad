@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100.4 100.4" style="enable-background:new 0 0 100.4 100.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<title>digra</title>
+<radialGradient id="SVGID_1_" cx="50.2" cy="50.1688" r="43.3704" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#0089CF"/>
+	<stop  offset="0.18" style="stop-color:#0181C7"/>
+	<stop  offset="0.46" style="stop-color:#056CB3"/>
+	<stop  offset="0.79" style="stop-color:#0A4A91"/>
+	<stop  offset="1" style="stop-color:#0E3178"/>
+</radialGradient>
+<path class="st0" d="M50.2,5.1C68.3,5.1,83,19.9,83,38c0,10.9-3,15.1-19.5,38.6c-3.7,5.2-7.9,11.2-12.8,18.4c0,0.1-0.1,0.2-0.4,0.2
+	c-0.2,0-0.4-0.1-0.6-0.3c-5-7.2-9.1-13.1-12.8-18.4C20.4,53,17.4,48.8,17.4,37.9C17.4,19.8,32.1,5.1,50.2,5.1 M50.2,57.3
+	c10.6,0,19.3-8.7,19.3-19.3s-8.7-19.3-19.3-19.3S30.9,27.4,30.9,38S39.6,57.3,50.2,57.3 M50.2,1.1c-20.3,0-36.8,16.5-36.8,36.8
+	c0,14.8,5.2,19,33,59.3c1,1.4,2.4,2,3.9,2c1.4,0,2.8-0.7,3.7-1.9C81.8,57,87,52.8,87,38C87,17.7,70.5,1.1,50.2,1.1L50.2,1.1z
+	 M50.2,53.3c-8.4,0-15.3-6.8-15.3-15.3s6.9-15.3,15.3-15.3S65.5,29.6,65.5,38S58.7,53.3,50.2,53.3L50.2,53.3z"/>
+</svg>

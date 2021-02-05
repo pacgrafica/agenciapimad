@@ -8,12 +8,12 @@
 /* =================================== */
 ::-moz-selection {
   /* Code for Firefox */
-  background-color: #f7427f;
+  background-color: #0E3178;
   color: #fff;
 }
 
 ::selection {
-  background-color: #f7427f;
+  background-color: #0E3178;
   color: #fff;
 }
 
@@ -775,7 +775,7 @@ td, th {
 }
 
 b, i, sup, sub, u, del {
-  color: #fcd2ff;
+  color: #0E3178;
 }
 
 h1 {
@@ -2766,7 +2766,7 @@ h6 {
 }
 
 .footer-text a, .footer-text i {
-  color: #f7427f;
+  color: #67b7e6;
 }
 .stretch{
   height: 100px;
